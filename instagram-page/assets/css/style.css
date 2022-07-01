@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+:root {
+    --background: linear-gradient(180deg, #9E469A, #CD3A6E, #E84E46, #F5A453);
+    --light-color: #fff;
+    --back-container: #f3f3f3;
+    --button: #0095f6;
+    --btn-acount: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', 'sans-seirf';
+    font-size: 14px;
+    background-repeat: no-repeat;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: var(--background);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    width: 50rem;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    background-color: var(--back-container);
+    border: 2px solid var(--back-container);
+    border-radius: 20px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.group:nth-child(1) {
+    min-height: 1.9rem;
+}
+
+.profile_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instagram_login {
+    background-color: var(--button);
+    color: var(--light-color);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram_logout {
+    color: var(--button);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.instagram_logout:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.not_account {
+    color: var(--btn-acount);
+}
+
+.link_blue {
+    color: var(--button);
+    cursor: pointer;
+}
+
+.link_blue:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.get_the_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app_download img {
+    width: 150px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .app_download img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 90%;
+    }
+    
+    .phone {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .app_download img {
+        width: 120px;
+    }
+}
